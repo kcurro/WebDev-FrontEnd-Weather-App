@@ -1,7 +1,7 @@
 <template>
 <div>
-    <h1> {{city}} </h1>
-    <h4> {{state}} </h4>
+    <h1> {{title}} </h1>
+    <h4> {{subtitle}} </h4>
 </div>
 </template>
 
@@ -10,8 +10,8 @@
 export default{
     name: 'Header',
     props:{
-        city: String,
-        state: String
+        title: String,
+        subtitle: String
     }
 }
 
@@ -21,6 +21,7 @@ export default{
 
 div{
     text-align: center;
+    background-color: #ddbea9;
 }
 
 </style>
