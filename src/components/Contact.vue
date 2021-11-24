@@ -27,6 +27,7 @@ div{
     text-align: center;
     background-color: #ddbea9;
 
+
 }
 
 item{

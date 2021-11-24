@@ -1,0 +1,124 @@
+{"cities": [{
+    "id":1,
+    "name": "New York",
+    "Sunday": "Cloudy",
+    "date1": "01-01-2022",
+    "Monday": "Sunny",
+    "date2": "01-02-2022",
+
+    "Tuesday": "Rainy",
+    "date3": "01-03-2022",
+
+    "Wednesday": "Cloudy",
+    "date4": "01-04-2022",
+
+    "Thursday": "Sunny",
+    "date5": "01-05-2022",
+
+    "Friday": "Sunny",
+    "date6": "01-06-2022",
+
+    "Saturday": "Rainy",
+    "date7": "01-07-2022",
+    "rainyDays": true
+  },
+  {
+    "id":2,
+    "name": "Los Angeles",
+    "Sunday": "Cloudy",
+    "date1": "01-01-2022",
+    "Monday": "Sunny",
+    "date2": "01-02-2022",
+
+    "Tuesday": "Rainy",
+    "date3": "01-03-2022",
+
+    "Wednesday": "Cloudy",
+    "date4": "01-04-2022",
+
+    "Thursday": "Sunny",
+    "date5": "01-05-2022",
+
+    "Friday": "Sunny",
+    "date6": "01-06-2022",
+
+    "Saturday": "Rainy",
+    "date7": "01-07-2022",
+    "rainyDays": true
+
+  },
+  {
+    "id":3,
+    "name": "Chicago",
+    "Sunday": "Cloudy",
+    "date1": "01-01-2022",
+    "Monday": "Sunny",
+    "date2": "01-02-2022",
+
+    "Tuesday": "Rainy",
+    "date3": "01-03-2022",
+
+    "Wednesday": "Cloudy",
+    "date4": "01-04-2022",
+
+    "Thursday": "Sunny",
+    "date5": "01-05-2022",
+
+    "Friday": "Sunny",
+    "date6": "01-06-2022",
+
+    "Saturday": "Rainy",
+    "date7": "01-07-2022",
+    "rainyDays": true
+
+  },
+  {
+    "id":4,
+    "name": "Houston",
+    "Sunday": "Cloudy",
+    "date1": "01-01-2022",
+    "Monday": "Sunny",
+    "date2": "01-02-2022",
+
+    "Tuesday": "Rainy",
+    "date3": "01-03-2022",
+
+    "Wednesday": "Cloudy",
+    "date4": "01-04-2022",
+
+    "Thursday": "Sunny",
+    "date5": "01-05-2022",
+
+    "Friday": "Sunny",
+    "date6": "01-06-2022",
+
+    "Saturday": "Rainy",
+    "date7": "01-07-2022",
+    "rainyDays": true
+
+  },
+  {
+    "id":5,
+    "name": "Phoenix",
+    "Sunday": "Cloudy",
+    "date1": "01-01-2022",
+    "Monday": "Sunny",
+    "date2": "01-02-2022",
+
+    "Tuesday": "Sunny",
+    "date3": "01-03-2022",
+
+    "Wednesday": "Sunny",
+    "date4": "01-04-2022",
+
+    "Thursday": "Sunny",
+    "date5": "01-05-2022",
+
+    "Friday": "Sunny",
+    "date6": "01-06-2022",
+
+    "Saturday": "Cloudy",
+    "date7": "01-07-2022",
+    "rainyDays": false
+
+  }]}

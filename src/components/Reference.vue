@@ -21,6 +21,7 @@ export default{
 
 div{
     text-align: center;
+    background-color: #6B705C ;
 }
 
 

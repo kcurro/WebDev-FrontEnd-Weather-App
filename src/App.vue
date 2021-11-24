@@ -2,10 +2,9 @@
 <div class="container">
   <Header title="Weather On The Go"
     subtitle="For the 5 Largest Cities in the U.S."/>
-  <Reference site="Data imported from Weather API: "
-   apiLink="www.api.com" />
-  <!--<Citybox :cities="cities" /> -->
-
+  <Reference site="Data sourced from Weather API "
+   apiLink="www.openweathermap.org" />
+  <Citybox :cities="cities" />
   <Contact msg1="Contact Our Developers"
     msg2="Thanks for visting the site!"/>
 </div>
@@ -19,19 +18,39 @@
 import Header from './components/Header.vue'
 import Contact from './components/Contact.vue'
 import Reference from './components/Reference.vue'
-//import Citybox from './components/Citybox.vue'
+import Citybox from './components/Citybox.vue'
 
 
-//data url http://localhost:5555/books 
+//data url http://localhost:8080/cities 
 export default {
   name: 'App',
   components: {
-    //HelloWorld
     Header,
     Reference,
-    //Citybox,
+    Citybox,
     Contact
   },
+
+  data(){
+      return {
+        cities: []
+      }
+    },
+    methods: {
+      // promises
+
+        async fetchCities(){
+          const res= await fetch('http://localhost:8080/cities')
+          const data= await res.json()
+            //console.log(data)
+          return data
+        }
+
+    },
+
+    async created(){
+      this.cities = await this.fetchCities()
+    }
 }
 </script>
 
@@ -48,10 +67,15 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 .container {
-  max-width: 400px;
-  margin: 30px auto;
-  overflow: auto;
-  min-height: 300px;
+  display: grid;
+  /*grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 0.2fr 0.2fr;
+  grid-template-areas: 
+  "header header header header"
+  "reference reference reference reference"
+  "footer footer footer footer";*/
+  grid-gap: 0.5rem;
+  height: 100vh;
   border: 0.3em solid black;
   padding: 30px;
   border-radius: 5px;
@@ -61,4 +85,5 @@ body {
 div{
   margin-bottom: 0.5em;
 }
+
 </style>

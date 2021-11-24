@@ -1,5 +1,14 @@
 <template>
+     <div class="citybox">
+         
+        <div v-for="city in cities" :key="city.id" >
+                
+                <City :city="city"/>
+        </div>
 
+        
+
+     </div>
 
 </template>
 
@@ -13,7 +22,7 @@ export default{
         City
     },
     props: {
-        city: Array
+        cities: Array
     }
 
 }
@@ -25,7 +34,7 @@ export default{
 
 .citybox{
 
-    background-color: bisque;
+    background-color:#B7B7A4;
     padding: 1em;
     color: gray;
 }
