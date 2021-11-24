@@ -75,7 +75,6 @@ body {
   "reference reference reference reference"
   "footer footer footer footer";*/
   grid-gap: 0.5rem;
-  height: 100vh;
   border: 0.3em solid black;
   padding: 30px;
   border-radius: 5px;
