@@ -1,9 +1,9 @@
 <template>
 <div class="container">
-  <Header title="Weather On The Go"
+  <Header title="Weekly Weather On The Go"
     subtitle="For the 5 Largest Cities in the U.S."/>
   <Reference site="Data sourced from Weather API "
-   apiLink="www.openweathermap.org" />
+   apiLink="openweathermap" />
   <Citybox :cities="cities" />
   <Contact msg1="Contact Our Developers"
     msg2="Thanks for visting the site!"/>
@@ -68,12 +68,6 @@ body {
 }
 .container {
   display: grid;
-  /*grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 0.2fr 0.2fr;
-  grid-template-areas: 
-  "header header header header"
-  "reference reference reference reference"
-  "footer footer footer footer";*/
   grid-gap: 0.5rem;
   border: 0.3em solid black;
   padding: 30px;

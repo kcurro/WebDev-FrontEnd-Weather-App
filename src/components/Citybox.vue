@@ -1,6 +1,5 @@
 <template>
      <div class="citybox">
-         
         <div v-for="city in cities" :key="city.id" >
                 
                 <City :city="city"/>
@@ -37,5 +36,16 @@ export default{
     background-color:#B7B7A4;
     padding: 1em;
     color: gray;
+
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(92px,1fr));
+  gap: 10px;
 }
 </style>
