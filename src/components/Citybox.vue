@@ -37,8 +37,9 @@ export default{
     padding: 1em;
     color: gray;
 
-    display: inline-flex;
-    flex-wrap: wrap;
+    /*display: inline-flex;
+    flex-wrap: wrap;*/
+    display: grid;
     justify-content: center;
 
 }

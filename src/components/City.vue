@@ -1,4 +1,6 @@
 <template>
+    <article>
+
     <div :class="city.rainyDays ? 'blue': 'yellow' ">
         <h2>{{city.name}}</h2>
         <div class="city">
@@ -45,6 +47,7 @@
             </section>
     </div>
 </div>
+</article>
 
 </template>
 
@@ -93,15 +96,19 @@ section{
 }
 
 article{
-    display: flex;
+    display: grid;
+    /*display: grid;*/
     justify-content: center;
+    /*border: 0.1em solid lightslategray;*/
+    /*padding: 30px;*/
 }
 
 .city{
 
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /*display: inline-grid;
+    justify-content: center;*/
 }
 
 
