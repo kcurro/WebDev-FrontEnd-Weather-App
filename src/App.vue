@@ -1,7 +1,7 @@
 <template>
 <div class="container">
   <Header title="Weekly Weather On The Go"
-    subtitle="For the 5 Largest Cities in the U.S."/>
+    subtitle="For the 6 Largest Cities in the U.S."/>
   <Reference site="Data sourced from Weather API "
    apiLink="openweathermap" />
   <Citybox :cities="cities" />
@@ -20,8 +20,7 @@ import Contact from './components/Contact.vue'
 import Reference from './components/Reference.vue'
 import Citybox from './components/Citybox.vue'
 
-
-//data url http://localhost:8080/cities 
+//data url https://intense-retreat-38934.herokuapp.com/api
 export default {
   name: 'App',
   components: {
@@ -37,19 +36,19 @@ export default {
       }
     },
     methods: {
-      // promises
+       //promises
 
-        async fetchCities(){
-          const res= await fetch('http://localhost:8080/cities')
-          const data= await res.json()
-            //console.log(data)
-          return data
-        }
-
+      async fetchCities(){
+        const res= await fetch('https://intense-retreat-38934.herokuapp.com/api')
+        console.log(res);
+        const data= await res.json();
+        console.log(data);
+        return data;
+      }
     },
 
     async created(){
-      this.cities = await this.fetchCities()
+      this.cities = await this.fetchCities();
     }
 }
 </script>
