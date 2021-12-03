@@ -3,7 +3,7 @@
 
     <div :class="city.rainyDays ? 'blue': 'yellow' ">
         <h2>{{city.name}}</h2>
-        <div class="city">
+        <div class="cityinfo">
             <section>
                 <h4> {{city.weekday1}} </h4>
                 <h6> {{city.date1}}</h6>
@@ -103,7 +103,7 @@ article{
     /*padding: 30px;*/
 }
 
-.city{
+.cityinfo{
 
     display: inline-flex;
     flex-wrap: wrap;

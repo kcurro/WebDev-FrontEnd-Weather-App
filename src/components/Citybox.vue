@@ -1,5 +1,6 @@
 <template>
      <div class="citybox">
+         
         <div v-for="city in cities" :key="city.id" >
                 
                 <City :city="city"/>

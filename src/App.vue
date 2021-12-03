@@ -22,8 +22,9 @@ import Citybox from './components/Citybox.vue'
 
 //data url https://intense-retreat-38934.herokuapp.com/api
 export default {
-  name: 'App',
+    name: 'App',
   components: {
+    // 2 register the component 
     Header,
     Reference,
     Citybox,
@@ -31,24 +32,22 @@ export default {
   },
 
   data(){
-      return {
+      return { 
         cities: []
       }
     },
     methods: {
-       //promises
-
       async fetchCities(){
         const res= await fetch('https://intense-retreat-38934.herokuapp.com/api')
-        console.log(res);
-        const data= await res.json();
-        console.log(data);
-        return data;
+        const data= await res.json()
+        console.log(data)
+        console.log(data.cities)
+        return data.cities
       }
     },
 
     async created(){
-      this.cities = await this.fetchCities();
+      this.cities = await this.fetchCities()
     }
 }
 </script>
