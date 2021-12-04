@@ -1,20 +1,16 @@
 <template>
-<div class="container">
-  <Header title="Weekly Weather On The Go"
-    subtitle="For the 6 Largest Cities in the U.S."/>
-  <Reference site="Data sourced from Weather API "
-   apiLink="openweathermap" />
-  <Citybox :cities="cities" />
-  <Contact msg1="Contact Our Developers"
-    msg2="Thanks for visting the site!"/>
-</div>
-
-  <!--<HelloWorld msg="Weclome to Class"/>-->
+  <div class="container">
+    <Header title="Weekly Weather On The Go"
+      subtitle="For the 6 Largest Cities in the U.S."/>
+    <Reference site="Data sourced from Weather API "
+    apiLink="openweathermap" />
+    <Citybox :cities="cities" />
+    <Contact msg1="Contact Our Developers"
+      msg2="Thanks for visting the site!"/>
+  </div>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
-
 import Header from './components/Header.vue'
 import Contact from './components/Contact.vue'
 import Reference from './components/Reference.vue'
@@ -24,7 +20,7 @@ import Citybox from './components/Citybox.vue'
 export default {
     name: 'App',
   components: {
-    // 2 register the component 
+    // 4 register the component 
     Header,
     Reference,
     Citybox,

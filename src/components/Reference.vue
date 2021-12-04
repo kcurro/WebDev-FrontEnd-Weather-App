@@ -1,8 +1,8 @@
 <template>
-<div>
+    <div>
         <h4> {{site}}: </h4>
         <h4> {{apiLink}} </h4>
-</div>
+    </div>
 </template>
 
 <script>

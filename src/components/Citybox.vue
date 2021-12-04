@@ -1,6 +1,11 @@
 <template>
      <div class="citybox">
-         
+        <div class = "index"> 
+            <h4>Rain in the calendar: blue</h4>
+            <h4>Sun in the calendar: yellow</h4>
+        </div>
+
+
         <div v-for="city in cities" :key="city.id" >
                 
                 <City :city="city"/>
@@ -50,4 +55,10 @@ export default{
   grid-template-columns: repeat(5, minmax(92px,1fr));
   gap: 10px;
 }
+
+.index{
+    text-align: center;
+    color: white;
+}
+
 </style>

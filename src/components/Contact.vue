@@ -1,12 +1,12 @@
 <template>
-<div>
-    <h1> {{msg1}} </h1>
-    <item>
-        <h4><font-awesome-icon icon="envelope" /></h4>
-        <a href="mailto: kcurr3@unh.newhaven.edu">   Email</a>
-    </item>
-    <h4> {{msg2}} </h4>
-</div>
+    <div>
+        <h1> {{msg1}} </h1>
+        <item>
+            <h4><font-awesome-icon icon="envelope" /></h4>
+            <a href="mailto: kcurr3@unh.newhaven.edu">   Email</a>
+        </item>
+        <h4> {{msg2}} </h4>
+    </div>
 </template>
 
 <script>
