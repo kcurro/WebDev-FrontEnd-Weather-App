@@ -1,37 +1,50 @@
 <template>
-<div class="container">
-  <Header title="Weather On The Go"
-    subtitle="For the 5 Largest Cities in the U.S."/>
-  <Reference site="Data imported from Weather API: "
-   apiLink="www.api.com" />
-  <!--<Citybox :cities="cities" /> -->
-
-  <Contact msg1="Contact Our Developers"
-    msg2="Thanks for visting the site!"/>
-</div>
-
-  <!--<HelloWorld msg="Weclome to Class"/>-->
+  <div class="container">
+    <Header title="Weekly Weather On The Go"
+      subtitle="For the 6 Largest Cities in the U.S."/>
+    <Reference site="Data sourced from Weather API "
+    apiLink="openweathermap" />
+    <Citybox :cities="cities" />
+    <Contact msg1="Contact Our Developers"
+      msg2="Thanks for visting the site!"/>
+  </div>
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
-
 import Header from './components/Header.vue'
 import Contact from './components/Contact.vue'
 import Reference from './components/Reference.vue'
-//import Citybox from './components/Citybox.vue'
+import Citybox from './components/Citybox.vue'
 
-
-//data url http://localhost:5555/books 
+//data url https://intense-retreat-38934.herokuapp.com/api
 export default {
-  name: 'App',
+    name: 'App',
   components: {
-    //HelloWorld
+    // 4 register the component 
     Header,
     Reference,
-    //Citybox,
+    Citybox,
     Contact
   },
+
+  data(){
+      return { 
+        cities: []
+      }
+    },
+    methods: {
+      async fetchCities(){
+        const res= await fetch('https://intense-retreat-38934.herokuapp.com/api')
+        const data= await res.json()
+        console.log(data)
+        console.log(data.cities)
+        return data.cities
+      }
+    },
+
+    async created(){
+      this.cities = await this.fetchCities()
+    }
 }
 </script>
 
@@ -48,10 +61,8 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 .container {
-  max-width: 400px;
-  margin: 30px auto;
-  overflow: auto;
-  min-height: 300px;
+  display: grid;
+  grid-gap: 0.5rem;
   border: 0.3em solid black;
   padding: 30px;
   border-radius: 5px;
@@ -61,4 +72,5 @@ body {
 div{
   margin-bottom: 0.5em;
 }
+
 </style>

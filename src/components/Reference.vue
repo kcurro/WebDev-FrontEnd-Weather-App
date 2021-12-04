@@ -1,8 +1,8 @@
 <template>
-<div>
-        <h4> {{site}} </h4>
+    <div>
+        <h4> {{site}}: </h4>
         <h4> {{apiLink}} </h4>
-</div>
+    </div>
 </template>
 
 <script>
@@ -21,6 +21,7 @@ export default{
 
 div{
     text-align: center;
+    background-color: #a5a58d;
 }
 
 
