@@ -2,7 +2,7 @@
      <div class="citybox">
         <div class = "index"> 
             <h4>Rain in the calendar: blue</h4>
-            <h4>Sun in the calendar: yellow</h4>
+            <h4>No rain in the calendar: yellow</h4>
         </div>
 
 
